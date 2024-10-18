@@ -9,11 +9,13 @@ freq = 500
 # duration is set to 100 milliseconds            
 dur = 500
               
-
-
-while True:
-    pos = imagesearch("Image assets/test1.png")
+def posFinder(path):
+    pos = imagesearch(path)
     if pos[0] != -1:                                                                                    
         winsound.Beep(freq, dur)
         del pos
-    time.sleep(0.05)
+    time.sleep(0.05)   
+
+while True:
+   posFinder("Image assets/test1.png")
+   posFinder("Image assets/test2.png")
