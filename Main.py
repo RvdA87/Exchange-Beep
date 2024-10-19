@@ -12,7 +12,7 @@ dur = 500
 
 
 while True:
-    pos = imagesearch("Image assets\Exchange.PNG")
+    pos = imagesearch("Image assets/test1.png")
     if pos[0] != -1:                                                                                    
         winsound.Beep(freq, dur)
         del pos
